@@ -1,0 +1,6 @@
+board:
+  name: my_frdm_board
+  full_name: MY FRDM BOARD
+  vendor: Giuliano
+  socs:
+  - name: mcxn236
