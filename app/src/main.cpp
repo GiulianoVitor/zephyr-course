@@ -5,7 +5,7 @@
 //#define SLEEP_TIME_MS 1000
 
 /* The devicetree node identifier for the "led0" alias. */
-#define LED_NODE DT_ALIAS(app_led_green)
+#define LED_NODE DT_ALIAS(ledr)
 
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED_NODE, gpios);
 

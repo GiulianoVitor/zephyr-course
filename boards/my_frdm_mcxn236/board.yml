@@ -1,0 +1,6 @@
+board:
+  name: my_frdm_mcxn236
+  full_name: MY FRDM-MCXN236
+  vendor: Giuliano
+  socs:
+  - name: mcxn236
