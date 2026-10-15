@@ -1,0 +1,7 @@
+config OUR_DRIVER
+    bool "Our Device Driver"
+    default y
+    depends on SENSOR
+    help
+      Enables the custom sensor driver used
+      for learning the Zephyr Sensor API.
