@@ -15,20 +15,20 @@ int main(void)
         return 0;
     }
 
-    printk("Our driver is ready!\n");
+    printk("Our driver is ready! Use Sensor Shell command\n");
 
     while (1) {
         
-        sensor_sample_fetch(mySensor);
+        //sensor_sample_fetch(mySensor);
+        //k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
+
+        //struct sensor_value dummyVal;
+        //sensor_channel_get(mySensor, SENSOR_CHAN_ALL, &dummyVal);
         k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
 
-        struct sensor_value dummyVal;
-        sensor_channel_get(mySensor, SENSOR_CHAN_ALL, &dummyVal);
-        k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
+        //our_driver_set_intensity(mySensor, i++);
 
-        our_driver_set_intensity(mySensor, i++);
-
-        printk("Heartbeat !\n");
+        //printk("Heartbeat !\n");
     }
     return 0;
 }

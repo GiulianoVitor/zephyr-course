@@ -5,3 +5,10 @@ config OUR_DRIVER
     help
       Enables the custom sensor driver used
       for learning the Zephyr Sensor API.
+
+config OUR_DRIVER_SHELL
+    bool "Enable Our Driver shell commands"
+    depends on OUR_DRIVER && SHELL
+    default y
+    help
+      Enable custom shell commands for Our Driver.
