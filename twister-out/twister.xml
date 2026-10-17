@@ -1,0 +1,8 @@
+<testsuites>
+	<testsuite name="qemu_x86/atom" timestamp="2026-10-17T19:04:41.338591" time="136.15" tests="1" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.3.0" />
+		</properties>
+		<testcase classname="qemu_x86/atom:homework.unit.ring_buf" name="homework.unit.ring_buf" time="136.15" />
+	</testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Zephyr/zephyr-course-workspace/zephyr-course/tests/ring_buf'
+    source-dir: 'C:/Zephyr/zephyr-course-workspace/zephyr-course/tests/ring_buf'
+  board:
+    name: 'qemu_x86'
+    path:
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/boards/qemu/x86'
+    qualifiers: 'atom'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/bindings'
+    files:
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/boards/qemu/x86/qemu_x86.dts'
+    include-dirs:
+     - 'C:/Zephyr/zephyr-course-workspace/deps/modules/hal/nxp/dts'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/modules/hal/stm32/dts'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/include'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/common'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/vendor'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/rx'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/x86'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/xtensa'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/sparc'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/riscv'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/posix'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/arm64'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/arm'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts/arc'
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Zephyr/zephyr-course-workspace/deps/zephyr/boards/qemu/x86/qemu_x86_defconfig'
+     - 'C:/Zephyr/zephyr-course-workspace/zephyr-course/tests/ring_buf/prj.conf'
+     - 'C:/Zephyr/zephyr-course-workspace/zephyr-course/twister-out/qemu_x86_atom/zephyr/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - 'C:/Zephyr/zephyr-course-workspace/zephyr-course/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/renat/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.0'
+    zephyr-base: 'C:/Zephyr/zephyr-course-workspace/deps/zephyr'
+version: '0.1.0'
