@@ -27,22 +27,22 @@
     "CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE",
     "y",
     "int",
-    "1024",
+    "4096",
     "default",
     [
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\kernel\\Kconfig",
-      590
+      588
     ]
   ],
   [
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
-    "1024",
+    "2048",
     "default",
     [
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\kernel\\Kconfig",
-      161
+      159
     ]
   ],
   [
@@ -293,11 +293,11 @@
     "CONFIG_IDLE_STACK_SIZE",
     "y",
     "int",
-    "320",
+    "2048",
     "default",
     [
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\kernel\\Kconfig",
-      175
+      171
     ]
   ],
   [
@@ -375,11 +375,11 @@
     "CONFIG_TEST_EXTRA_STACK_SIZE",
     "y",
     "int",
-    "0",
+    "2048",
     "default",
     [
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\Kconfig",
-      21
+      19
     ]
   ],
   [
@@ -436,7 +436,7 @@
     "default",
     [
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\ztest\\Kconfig",
-      16
+      15
     ]
   ],
   [
@@ -2590,9 +2590,12 @@
     "CONFIG_STATIC_INIT_GNU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\kernel\\Kconfig",
+      1101
+    ]
   ],
   [
     "CONFIG_BOOTARGS",
@@ -5304,9 +5307,12 @@
     "CONFIG_LOG_ALWAYS_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\logging\\Kconfig.misc",
+      40
+    ]
   ],
   [
     "CONFIG_LOG_FMT_SECTION",
@@ -5658,6 +5664,14 @@
     null
   ],
   [
+    "CONFIG_ZTEST_WARN_NO_OPTIMIZATIONS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_ZTEST_RULE_1CPU",
     "y",
     "bool",
@@ -5675,6 +5689,14 @@
       "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\ztest\\Kconfig",
       133
     ]
+  ],
+  [
+    "CONFIG_ZTEST_COVERAGE_RESET_BEFORE_TESTS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_ZTEST_SHUFFLE",
@@ -5834,9 +5856,45 @@
     "CONFIG_COVERAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "assign",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\zephyr-course\\twister-out\\qemu_x86_atom\\zephyr\\zephyr-course\\tests\\ring_buf\\homework.unit.ring_buf\\twister\\testsuite_extra.conf",
+      2
+    ]
+  ],
+  [
+    "CONFIG_COVERAGE_GCOV",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
+      25
+    ]
+  ],
+  [
+    "CONFIG_COVERAGE_GCOV_HEAP_SIZE",
+    "y",
+    "int",
+    "32768",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
+      57
+    ]
+  ],
+  [
+    "CONFIG_COVERAGE_DUMP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
+      68
+    ]
   ],
   [
     "CONFIG_FORCE_COVERAGE",
@@ -6154,12 +6212,9 @@
     "CONFIG_SIZE_OPTIMIZATIONS",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\Kconfig.zephyr",
-      484
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS_AGGRESSIVE",
@@ -6189,9 +6244,12 @@
     "CONFIG_NO_OPTIMIZATIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\Kconfig.zephyr",
+      481
+    ]
   ],
   [
     "CONFIG_LTO",
@@ -6254,20 +6312,20 @@
     "CONFIG_FORTIFY_SOURCE_NONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\Kconfig.zephyr",
+      567
+    ]
   ],
   [
     "CONFIG_FORTIFY_SOURCE_COMPILE_TIME",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "C:\\Zephyr\\zephyr-course-workspace\\deps\\zephyr\\Kconfig.zephyr",
-      568
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_FORTIFY_SOURCE_RUN_TIME",

@@ -67,9 +67,11 @@ linker_zephyr_pre0.cmd: \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/linker/thread-local-storage.ld \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/arch/x86/ia32/scripts/static_intr.ld \
  C:/Zephyr/zephyr-course-workspace/zephyr-course/twister-out/qemu_x86_atom/zephyr/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/snippets-rodata.ld \
+ c:\zephyr\zephyr-course-workspace\deps\zephyr\subsys\testsuite\coverage\coverage_rodata.ld \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/linker/kobject-rom.ld \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/linker/cplusplus-rom.ld \
  C:/Zephyr/zephyr-course-workspace/zephyr-course/twister-out/qemu_x86_atom/zephyr/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/snippets-ram-sections.ld \
+ c:\zephyr\zephyr-course-workspace\deps\zephyr\subsys\testsuite\coverage\coverage_ram.ld \
  C:/Zephyr/zephyr-course-workspace/zephyr-course/twister-out/qemu_x86_atom/zephyr/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/snippets-rwdata.ld \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/arch/x86/ia32/scripts/shared_kernel_pages.ld \
  C:/Zephyr/zephyr-course-workspace/deps/zephyr/include/zephyr/linker/cplusplus-ram.ld \

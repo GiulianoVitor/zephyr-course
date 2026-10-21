@@ -4,7 +4,7 @@
         "zephyr_version":"v4.3.0",
         "toolchain":"zephyr",
         "commit_date":"2025-11-13T17:35:08+02:00",
-        "run_date":"2026-10-17T23:04:39+00:00",
+        "run_date":"2026-10-21T00:23:19+00:00",
         "options":{
             "help":null,
             "zephyr_base":null,
@@ -16,7 +16,13 @@
             "platform":[
                 "qemu_x86"
             ],
-            "clobber_output":true
+            "enable_coverage":true,
+            "coverage":true,
+            "gcov_tool":"x86_64-zephyr-elf-gcov.exe",
+            "coverage_basedir":"app/modules/ring_buf",
+            "coverage_platform":[
+                "qemu_x86"
+            ]
         }
     },
     "testsuites":[
@@ -25,41 +31,16 @@
             "arch":"x86",
             "platform":"qemu_x86/atom",
             "path":"..\\..\\zephyr-course\\tests\\ring_buf",
-            "run_id":"2601a6a817de34ab645589581e295947",
+            "run_id":"fc347af62e8cf1480e2f9dfd1cb3d896",
             "runnable":true,
             "retries":0,
             "toolchain":"zephyr",
             "status":"passed",
-            "execution_time":"136.15",
-            "build_time":"21.66",
+            "execution_time":"150.68",
+            "build_time":"78.86",
             "testcases":[
                 {
-                    "identifier":"ring_buf_boundaries.is_full_after_fill",
-                    "execution_time":"0.00",
-                    "status":"passed"
-                },
-                {
-                    "identifier":"ring_buf_boundaries.pop_null_returns_einval",
-                    "execution_time":"0.00",
-                    "status":"passed"
-                },
-                {
-                    "identifier":"ring_buf_boundaries.peek_does_not_consume",
-                    "execution_time":"0.00",
-                    "status":"passed"
-                },
-                {
-                    "identifier":"ring_buf_push_pop.push_full_returns_enospc",
-                    "execution_time":"0.00",
-                    "status":"passed"
-                },
-                {
-                    "identifier":"ring_buf_push_pop.fifo_order",
-                    "execution_time":"0.00",
-                    "status":"passed"
-                },
-                {
-                    "identifier":"ring_buf_push_pop.single_push_pop",
+                    "identifier":"ring_buf_init.fresh_state",
                     "execution_time":"0.00",
                     "status":"passed"
                 },
@@ -69,7 +50,32 @@
                     "status":"passed"
                 },
                 {
-                    "identifier":"ring_buf_init.fresh_state",
+                    "identifier":"ring_buf_push_pop.single_push_pop",
+                    "execution_time":"0.00",
+                    "status":"passed"
+                },
+                {
+                    "identifier":"ring_buf_push_pop.fifo_order",
+                    "execution_time":"0.00",
+                    "status":"passed"
+                },
+                {
+                    "identifier":"ring_buf_push_pop.push_full_returns_enospc",
+                    "execution_time":"0.00",
+                    "status":"passed"
+                },
+                {
+                    "identifier":"ring_buf_boundaries.peek_does_not_consume",
+                    "execution_time":"0.00",
+                    "status":"passed"
+                },
+                {
+                    "identifier":"ring_buf_boundaries.pop_null_returns_einval",
+                    "execution_time":"0.00",
+                    "status":"passed"
+                },
+                {
+                    "identifier":"ring_buf_boundaries.is_full_after_fill",
                     "execution_time":"0.00",
                     "status":"passed"
                 }

@@ -197,8 +197,6 @@ ztest :
   KEEP (*(.init_array .ctors))
   __zephyr_init_array_end = .;
  } > RAM
- ASSERT(__zephyr_init_array_start == __zephyr_init_array_end,
-        "GNU-style constructors required but STATIC_INIT_GNU not enabled")
  bt_l2cap_fixed_chan_area : { _bt_l2cap_fixed_chan_list_start = .; KEEP(*(SORT_BY_NAME(._bt_l2cap_fixed_chan.static.*))); _bt_l2cap_fixed_chan_list_end = .;; } > RAM
  bt_gatt_service_static_area : { _bt_gatt_service_static_list_start = .; KEEP(*(SORT_BY_NAME(._bt_gatt_service_static.static.*))); _bt_gatt_service_static_list_end = .;; } > RAM
  log_strings_area : { _log_strings_list_start = .; KEEP(*(SORT_BY_NAME(._log_strings.static.*))); _log_strings_list_end = .;; } > RAM
@@ -254,6 +252,11 @@ ztest :
  . = ALIGN(4);
  _irq_to_interrupt_vector = .;
  KEEP(*(irq_int_vector_map))
+. = ALIGN(4);
+PROVIDE_HIDDEN (__init_array_start = .);
+KEEP (*(SORT(.init_array.*)))
+KEEP (*(.init_array*))
+PROVIDE_HIDDEN (__init_array_end = .);
  } > RAM
  PROVIDE(__eh_frame_start = 0);
  PROVIDE(__eh_frame_end = 0);
@@ -271,6 +274,17 @@ ztest :
   *(.igot)
  }
 
+_GCOV_BSS_SECTION_NAME (NOLOAD) :
+{
+ . = ALIGN(0x1000);
+ __gcov_bss_start = .;
+ *(".bss.__gcov0.*");
+ . = ALIGN(4);
+ . = ALIGN(0x1000);
+ __gcov_bss_end = .;
+} > RAM
+__gcov_bss_num_words = ((__gcov_bss_end - __gcov_bss_start) >> 2);
+__gcov_bss_size = __gcov_bss_end - __gcov_bss_start;
  datas :
  {
  . = ALIGN(0x1000);

@@ -82,4 +82,6 @@ zephyr/linker.cmd: \
   C:/Users/renat/zephyr-sdk-0.17.4/x86_64-zephyr-elf/lib/gcc/x86_64-zephyr-elf/12.2.0/include/stdbool.h \
   C:/Zephyr/zephyr-course-workspace/deps/zephyr/arch/common/fill_with_zeros.ld \
   C:/Zephyr/zephyr-course-workspace/deps/zephyr/arch/common/rom_start_address.ld \
-  C:/Zephyr/zephyr-course-workspace/deps/zephyr/arch/common/rom_start_offset.ld
+  C:/Zephyr/zephyr-course-workspace/deps/zephyr/arch/common/rom_start_offset.ld \
+  C:/Zephyr/zephyr-course-workspace/deps/zephyr/subsys/testsuite/coverage/coverage_ram.ld \
+  C:/Zephyr/zephyr-course-workspace/deps/zephyr/subsys/testsuite/coverage/coverage_rodata.ld

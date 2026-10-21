@@ -339,6 +339,9 @@ IMGTOOL:FILEPATH=IMGTOOL-NOTFOUND
 //Path to a program.
 OPENOCD:FILEPATH=OPENOCD-NOTFOUND
 
+//No help, variable specified on the command line.
+OVERLAY_CONFIG:UNINITIALIZED=C:\Zephyr\zephyr-course-workspace\zephyr-course\twister-out\qemu_x86_atom\zephyr\zephyr-course\tests\ring_buf\homework.unit.ring_buf\twister\testsuite_extra.conf
+
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND
 
@@ -364,7 +367,7 @@ SOC_FULL_DIR:PATH=C:/Zephyr/zephyr-course-workspace/deps/zephyr/soc/intel/atom
 TC_NAME:UNINITIALIZED=homework.unit.ring_buf
 
 //No help, variable specified on the command line.
-TC_RUNID:UNINITIALIZED=2601a6a817de34ab645589581e295947
+TC_RUNID:UNINITIALIZED=fc347af62e8cf1480e2f9dfd1cb3d896
 
 //True if toolchain supports newlib
 TOOLCHAIN_HAS_NEWLIB:BOOL=ON
@@ -380,9 +383,6 @@ ZEPHYR_BASE:PATH=C:/Zephyr/zephyr-course-workspace/deps/zephyr
 
 //Path to Zephyr git repository index file
 ZEPHYR_GIT_INDEX:PATH=C:/Zephyr/zephyr-course-workspace/deps/zephyr/.git/index
-
-//Zephyr SDK install directory
-ZEPHYR_SDK_INSTALL_DIR:PATH=C:/Users/renat/zephyr-sdk-0.17.4
 
 //Zephyr toolchain variant
 ZEPHYR_TOOLCHAIN_VARIANT:STRING=zephyr
@@ -538,7 +538,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=73
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=74
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -597,6 +597,8 @@ SOC_DIRECTORIES:INTERNAL=C:/Zephyr/zephyr-course-workspace/deps/zephyr/soc/intel
 SOC_LINKER_SCRIPT:INTERNAL=C:/Zephyr/zephyr-course-workspace/deps/zephyr/soc/intel/atom/linker.ld
 //West
 WEST:INTERNAL=C:/Python313/python.exe;-m;west
+//Cached environment variable ZEPHYR_SDK_INSTALL_DIR
+ZEPHYR_SDK_INSTALL_DIR:INTERNAL=C:\Users\renat\zephyr-sdk-0.17.4
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
