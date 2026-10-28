@@ -1,6 +1,6 @@
 / {
 	aliases{
-		app-led-red = &red_led;		//by node
+		app-led = &red_led;		//by node
 		app-led-green = &green_led;	//by node
 		app-led-blue = "/leds/led_2"; 	//by path - make sure you pick the righ name from "zephyr\boards\nxp\frdm_mcxn236\frdm_mcxn236.dts"
 	};
